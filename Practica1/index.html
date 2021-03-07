@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Practica 1</title>
+    <meta name="author" content="masopego" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form>
+      <div class="inputs">
+        <input
+          class="input js-id-card-number"
+          type="number"
+          name="id-card-number"
+          min="0"
+          maxlength="8"
+          placeholder="Número de DNI"
+          required
+        />
+        <input
+          class="input js-id-card-letter"
+          type="text"
+          name="id-card-letter"
+          maxlength="1"
+          placeholder="Letra"
+          required
+        />
+      </div>
+      <div>
+        <input type="submit" value="Validar" />
+      </div>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
