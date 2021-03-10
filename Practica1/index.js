@@ -32,6 +32,7 @@ const idCardNumberInput = document.querySelector(".js-id-card-number");
 const idCardLetterInput = document.querySelector(".js-id-card-letter");
 const submitButton = document.querySelector("input[type=submit]");
 const form = document.querySelector("form");
+const popup = document.getElementById("popup");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -53,13 +54,13 @@ const validateIdCard = () => {
   const letter = idCardLetterInput.value;
 
   if (!isValidNumber(idCardNumber)) {
-    alert("El número no es valido");
+    showPopup("El número no es valido");
     clearInputs();
     return;
   }
 
   if (!isValidLetter(letter)) {
-    alert("No has introducido una letra correcta");
+    showPopup("No has introducido una letra correcta");
     clearInputs();
     return;
   }
@@ -70,10 +71,37 @@ const validateIdCard = () => {
   const isValidIdCard = validLetter === letter.toUpperCase();
   if (!isValidIdCard) {
     clearInputs();
-    alert("ES INVALIDO");
+    showPopup(
+      buildTitle(
+        "El DNI introducido no es correcto, por favor, revisa los campos del formulario",
+        "h3",
+        "error"
+      )
+    );
 
     return;
   }
 
-  alert("ES VALIDO");
+  showPopup(
+    buildTitle("La letra introducida es válida:" + validLetter, "h1", "success")
+  );
+};
+
+function showPopup(text) {
+  popup.classList.toggle("show");
+  // popup.innerHTML = text;
+  popup.querySelector(".content").appendChild(text);
+}
+
+function closePopup() {
+  popup.classList.toggle("show");
+  popup.querySelector(".content").innerHTML = "";
+}
+
+const buildTitle = (text, tag, className) => {
+  const title = document.createElement(tag);
+  title.classList.add(className);
+  const content = document.createTextNode(text);
+  title.appendChild(content);
+  return title;
 };
