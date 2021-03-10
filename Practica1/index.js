@@ -89,7 +89,6 @@ const validateIdCard = () => {
 
 function showPopup(text) {
   popup.classList.toggle("show");
-  // popup.innerHTML = text;
   popup.querySelector(".content").appendChild(text);
 }
 
