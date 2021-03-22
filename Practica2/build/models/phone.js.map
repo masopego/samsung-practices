@@ -1,0 +1,1 @@
+{"version":3,"file":"phone.js","sourceRoot":"","sources":["../../src/models/phone.ts"],"names":[],"mappings":";;AAAA,MAA8B,KAAK;IAGjC,YAAY,MAAc;QACxB,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;IACvB,CAAC;IAID,IAAI;QACF,OAAO,CAAC,GAAG,CAAC;YACJ,IAAI,CAAC,IAAI,EAAE;cACT,IAAI,CAAC,MAAM;KACpB,CAAC,CAAC;IACL,CAAC;CACF;AAfD,wBAeC"}

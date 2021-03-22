@@ -1,0 +1,14 @@
+{
+  "name": "practica2",
+  "version": "1.0.0",
+  "description": "typescript",
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "tsc --watch",
+    "start:prod": "tsc && node build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
