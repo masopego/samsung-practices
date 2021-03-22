@@ -64,15 +64,15 @@ export default class Contact {
     return age;
   }
 
-  addAddress(address: Address) {
-    this.addresses.push(address);
+  modifyAddress(address: Address) {
+    this.addresses = [address];
   }
-  addPhone(phone: Phone) {
-    this.phones.push(phone);
+  modifyPhone(phone: Phone) {
+    this.phones = [phone];
   }
 
-  addMail(mail: Mail) {
-    this.mails.push(mail);
+  modifyMail(mail: Mail) {
+    this.mails = [mail];
   }
 
   show() {

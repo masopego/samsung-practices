@@ -25,14 +25,14 @@ class Contact {
         const age = Math.floor(numDays / 365);
         return age;
     }
-    addAddress(address) {
-        this.addresses.push(address);
+    modifyAddress(address) {
+        this.addresses = [address];
     }
-    addPhone(phone) {
-        this.phones.push(phone);
+    modifyPhone(phone) {
+        this.phones = [phone];
     }
-    addMail(mail) {
-        this.mails.push(mail);
+    modifyMail(mail) {
+        this.mails = [mail];
     }
     show() {
         console.log(`

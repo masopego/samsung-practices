@@ -18,6 +18,6 @@ contactBook.addContact(contact1);
 contactBook.addContact(contact2);
 contactBook.addContact(contact3);
 contactBook.showContacts();
-contactBook.updateContact("12312", new address_1.default("Calle nueva", 35, "1º", "B", 45890, "Madrid", "Madrid"), new fixed_phone_1.default(90623432423), new mail_1.default(mail_1.MailType.Personal, "nuevo@hotmail.com"));
+contactBook.updateContact("83746157F", new address_1.default("Calle nueva", 35, "1º", "B", 45890, "Madrid", "Madrid"), new fixed_phone_1.default(90623432423), new mail_1.default(mail_1.MailType.Personal, "nuevo@hotmail.com"));
 contactBook.showContacts();
 //# sourceMappingURL=main.js.map

@@ -14,9 +14,9 @@ class ContactBook {
             console.log("Contacto no encontrado");
             return this;
         }
-        contactFind.addAddress(address);
-        contactFind.addPhone(phone);
-        contactFind.addMail(mail);
+        contactFind.modifyAddress(address);
+        contactFind.modifyPhone(phone);
+        contactFind.modifyMail(mail);
         return this;
     }
     showContacts() {

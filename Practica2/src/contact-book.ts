@@ -30,9 +30,9 @@ export default class ContactBook implements ContactBookInterface {
       return this;
     }
 
-    contactFind.addAddress(address);
-    contactFind.addPhone(phone);
-    contactFind.addMail(mail);
+    contactFind.modifyAddress(address);
+    contactFind.modifyPhone(phone);
+    contactFind.modifyMail(mail);
 
     return this;
   }
