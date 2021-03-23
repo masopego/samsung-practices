@@ -1,0 +1,243 @@
+{
+  "supermarket": [
+    {
+      "name": "La esquina ecológica",
+      "address": "Calle Matropolitano, nº14. CP. 02008. Albacete.",
+      "geolocation": "38°59'44.2\"N 1°51'21.5\"O\"",
+      "products": [
+        {
+          "name": "sandia",
+          "description": "Huerta de Almería",
+          "origin": "España",
+          "price": 4.35,
+          "measure": "kg",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "15-03-2021",
+              "deadline": "04-04-2021",
+              "price": 3.5
+            }
+          ],
+          "basket": 2,
+          "favourite": true,
+          "acquired": false
+        },
+        {
+          "name": "café",
+          "description": "Café del Valle del Cauca",
+          "origin": "Colombia",
+          "price": 2.4,
+          "measure": "paquetes",
+          "offer": [
+            {
+              "valid": false,
+              "startdate": null,
+              "deadline": null,
+              "price": null
+            }
+          ],
+          "basket": 1,
+          "favourite": true,
+          "acquired": false
+        },
+        {
+          "name": "Arándano Deshidratado",
+          "description": "Pequeñas bombas de antioxidantes",
+          "origin": "Francia",
+          "price": 2.7,
+          "measure": "gr",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "30-3-2021",
+              "deadline": "10-04-2021",
+              "price": 1.5
+            }
+          ],
+          "basket": 1,
+          "favourite": false,
+          "acquired": false
+        },
+        {
+          "name": "Alubia Pinta",
+          "description": "Lás más consumidas en España",
+          "origin": "España",
+          "price": 3.2,
+          "measure": "kg",
+          "offer": [
+            {
+              "valid": false,
+              "startdate": null,
+              "deadline": null,
+              "price": null
+            }
+          ],
+          "basket": 1,
+          "favourite": true,
+          "acquired": false
+        }
+      ]
+    },
+
+    {
+      "name": "El carro de la compra",
+      "address": "Calle Concha Espina, nº30. CP. 02001. Albacete.",
+      "geolocation": "38°59'40.2\"N 1°51'15\"O\"",
+      "products": [
+        {
+          "name": "leche",
+          "description": "Leche de coco",
+          "origin": "Bélgica",
+          "price": 1.2,
+          "measure": "litro",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "30-03-2021",
+              "deadline": "04-04-2021",
+              "price": 0.9
+            }
+          ],
+          "basket": 6,
+          "favourite": true,
+          "acquired": false
+        },
+        {
+          "name": "Yogur",
+          "description": "En vaso de vidrio",
+          "origin": "España",
+          "price": 1.4,
+          "measure": "paquetes",
+          "offer": [
+            {
+              "valid": false,
+              "startdate": null,
+              "deadline": null,
+              "price": null
+            }
+          ],
+          "basket": 1,
+          "favourite": true,
+          "acquired": false
+        },
+        {
+          "name": "Fajita de maiz",
+          "description": "Con virutas de chocolate",
+          "origin": "México",
+          "price": 0.5,
+          "measure": "paquete",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "30-3-2021",
+              "deadline": "10-04-2021",
+              "price": 1.5
+            }
+          ],
+          "basket": 1,
+          "favourite": false,
+          "acquired": false
+        },
+        {
+          "name": "Galletas Orebla",
+          "description": "Con crema de vainilla en su interior",
+          "origin": "Estados Unidos",
+          "price": 1.6,
+          "measure": "kg",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "24-03-2021",
+              "deadline": "30-04-2021",
+              "price": 1
+            }
+          ],
+          "basket": 2,
+          "favourite": true,
+          "acquired": false
+        }
+      ]
+    },
+
+    {
+      "name": "La Huerta",
+      "address": "PLaza de la Libertad, nº11. CP. 02008. Albacete.",
+      "geolocation": "38°59'35.5\"N 1°51'12.7\"O\"",
+      "products": [
+        {
+          "name": "Champú",
+          "description": "Especial para pelos con grasa",
+          "origin": "Noruega",
+          "price": 4.5,
+          "measure": "litros",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "10-03-2021",
+              "deadline": "10-04-2021",
+              "price": 3.5
+            }
+          ],
+          "basket": 2,
+          "favourite": false,
+          "acquired": false
+        },
+        {
+          "name": "gel de manos",
+          "description": "Para manos sensibles y con aroma de mango",
+          "origin": "Estados Unidos",
+          "price": 2.6,
+          "measure": "litros",
+          "offer": [
+            {
+              "valid": false,
+              "startdate": null,
+              "deadline": null,
+              "price": null
+            }
+          ],
+          "basket": 1,
+          "favourite": true,
+          "acquired": false
+        },
+        {
+          "name": "Discos desmaquillantes",
+          "description": "Ecológicos y reutilizables",
+          "origin": "Portugal",
+          "price": 1.5,
+          "measure": "paquete",
+          "offer": [
+            {
+              "valid": true,
+              "startdate": "10-04-2021",
+              "deadline": "10-04-2021",
+              "price": 1
+            }
+          ],
+          "basket": 1,
+          "favourite": true,
+          "acquired": false
+        },
+        {
+          "name": "Crema Aloe Vera",
+          "description": "Loción para cuerpo y cara",
+          "origin": "Marruecos",
+          "price": 2.7,
+          "measure": "litros",
+          "offer": [
+            {
+              "valid": false,
+              "startdate": null,
+              "deadline": null,
+              "price": null
+            }
+          ],
+          "basket": 2,
+          "favourite": false,
+          "acquired": false
+        }
+      ]
+    }
+  ]
+}
