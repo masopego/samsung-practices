@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <supermarkets>
+     <supermarket>
+         <name>La esquina ecológica</name>
+         <address>Calle Matropolitano, nº14. CP. 02008. Albacete.</address>
+         <geolocation>
+            <north>38°59'44.2 </north>
+            <south></south>
+            <east></east>
+            <west>1°51'21.5</west>
+        </geolocation>
+         <products>
+             <name>sandia</name>
+             <description>Huerta de Almería</description>
+             <origin>España</origin>
+             <price>4.35</price>
+             <measure>kg</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>15-03-2021</startdate>
+                 <deadline>04-04-2021</deadline>
+                 <price>3.5</price>
+             </offer>
+             <basket>2</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>café</name>
+             <description>Café del Valle del Cauca</description>
+             <origin>Colombia</origin>
+             <price>2.4</price>
+             <measure>paquetes</measure>
+             <offer>
+                 <valid>false</valid>
+                 <startdate></startdate>
+                 <deadline></deadline>
+                 <price></price>
+             </offer>
+             <basket>1</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Arándano Deshidratado</name>
+             <description>Pequeñas bombas de antioxidantes</description>
+             <origin>Francia</origin>
+             <price>2.7</price>
+             <measure>gr</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>30-3-2021</startdate>
+                 <deadline>10-04-2021</deadline>
+                 <price>1.5</price>
+             </offer>
+             <basket>1</basket>
+             <favourite>false</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Alubia Pinta</name>
+             <description>Lás más consumidas en España</description>
+             <origin>España</origin>
+             <price>3.2</price>
+             <measure>kg</measure>
+             <offer>
+                 <valid>false</valid>
+                 <startdate></startdate>
+                 <deadline></deadline>
+                 <price></price>
+             </offer>
+             <basket>1</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+     </supermarket>
+     <supermarket>
+         <name>El carro de la compra</name>
+         <address>Calle Concha Espina, nº30. CP. 02001. Albacete.</address>
+         <geolocation>
+            <north>38°59'40.2</north>
+            <south></south>
+            <east></east>
+            <west>1°51'15</west>
+        </geolocation>
+         <products>
+             <name>leche</name>
+             <description>Leche de coco</description>
+             <origin>Bélgica</origin>
+             <price>1.2</price>
+             <measure>litro</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>30-03-2021</startdate>
+                 <deadline>04-04-2021</deadline>
+                 <price>0.9</price>
+             </offer>
+             <basket>6</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Yogur</name>
+             <description>En vaso de vidrio</description>
+             <origin>España</origin>
+             <price>1.4</price>
+             <measure>paquetes</measure>
+             <offer>
+                 <valid>false</valid>
+                 <startdate></startdate>
+                 <deadline></deadline>
+                 <price></price>
+             </offer>
+             <basket>1</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Fajita de maiz</name>
+             <description>Con virutas de chocolate</description>
+             <origin>México</origin>
+             <price>0.5</price>
+             <measure>paquete</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>30-3-2021</startdate>
+                 <deadline>10-04-2021</deadline>
+                 <price>1.5</price>
+             </offer>
+             <basket>1</basket>
+             <favourite>false</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Galletas Orebla</name>
+             <description>Con crema de vainilla en su interior</description>
+             <origin>Estados Unidos</origin>
+             <price>1.6</price>
+             <measure>kg</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>24-03-2021</startdate>
+                 <deadline>30-04-2021</deadline>
+                 <price>1</price>
+             </offer>
+             <basket>2</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+     </supermarket>
+     <supermarket>
+         <name>La Huerta</name>
+         <address>PLaza de la Libertad, nº11. CP. 02008. Albacete.</address>
+         <geolocation>
+            <north>38°59'35.5</north>
+            <south></south>
+            <east></east>
+            <west>1°51'12.7</west>
+        </geolocation>
+         <products>
+             <name>Champú</name>
+             <description>Especial para pelos con grasa</description>
+             <origin>Noruega</origin>
+             <price>4.5</price>
+             <measure>litros</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>10-03-2021</startdate>
+                 <deadline>10-04-2021</deadline>
+                 <price>3.5</price>
+             </offer>
+             <basket>2</basket>
+             <favourite>false</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>gel de manos</name>
+             <description>Para manos sensibles y con aroma de mango</description>
+             <origin>Estados Unidos</origin>
+             <price>2.6</price>
+             <measure>litros</measure>
+             <offer>
+                 <valid>false</valid>
+                 <startdate></startdate>
+                 <deadline></deadline>
+                 <price></price>
+             </offer>
+             <basket>1</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Discos desmaquillantes</name>
+             <description>Ecológicos y reutilizables</description>
+             <origin>Portugal</origin>
+             <price>1.5</price>
+             <measure>paquete</measure>
+             <offer>
+                 <valid>true</valid>
+                 <startdate>10-04-2021</startdate>
+                 <deadline>10-04-2021</deadline>
+                 <price>1</price>
+             </offer>
+             <basket>1</basket>
+             <favourite>true</favourite>
+             <acquired>false</acquired>
+         </products>
+         <products>
+             <name>Crema Aloe Vera</name>
+             <description>Loción para cuerpo y cara</description>
+             <origin>Marruecos</origin>
+             <price>2.7</price>
+             <measure>litros</measure>
+             <offer>
+                 <valid>false</valid>
+                 <startdate></startdate>
+                 <deadline></deadline>
+                 <price></price>
+             </offer>
+             <basket>2</basket>
+             <favourite>false</favourite>
+             <acquired>false</acquired>
+         </products>
+     </supermarket>
+ </supermarkets>
