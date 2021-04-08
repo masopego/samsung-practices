@@ -2,15 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice 4: API's HTML5</title>
     <meta name="author" content="masopego" />
+    <script
+      src="https://kit.fontawesome.com/7fa95d1a39.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <video src="#"></video>
-    <button>Reproducir</button>
-    <button>Pausar</button>
-    <button>Subir volumen</button>
-    <button>Bajar volumen</button>
+    <h1>Tu día en imágenes</h1>
+    <div>
+      <label for="featuredVideo">¡Sube tu propio vídeo!</label>
+      <input
+        type="file"
+        name="featuredVideo"
+        id="featuredVideo"
+        accept="video/*"
+      />
+    </div>
+    <div class="videoContainer-js"></div>
+    <div>
+      <button class="videoAction-js" id="play">
+        <i class="fas fa-play"></i>
+      </button>
+      <button class="videoAction-js" id="pause">
+        <i class="fas fa-pause"></i>
+      </button>
+      <button class="videoAction-js" id="upVol">
+        <i class="fas fa-volume-up"></i>
+      </button>
+      <button class="videoAction-js" id="lowVol">
+        <i class="fas fa-volume-down"></i>
+      </button>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
