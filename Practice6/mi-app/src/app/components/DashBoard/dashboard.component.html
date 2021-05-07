@@ -1,0 +1,291 @@
+<h1>Formulario</h1>
+<form>
+  <div class="formContainer">
+    <!-- Nombre -->
+    <mat-form-field appearance="outline" [formGroup]="form" class="inputField">
+      <mat-label>Escribe tu Nombre</mat-label>
+      <input
+        type="text"
+        formControlName="firstName"
+        matInput
+        placeholder="Nombre"
+        min="3"
+      />
+      <div
+        *ngIf="
+          form.controls.firstName.invalid &&
+          (form.controls.firstName.dirty || form.controls.firstName.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.firstName.errors?.required">
+          Este campo es requerido
+        </div>
+        <div *ngIf="form.controls.firstName.errors?.minlength">
+          Este campo tiene que tener al menos tres carácteres
+        </div>
+      </div>
+      <mat-hint>Nombre</mat-hint>
+    </mat-form-field>
+
+    <!-- Apellido -->
+    <mat-form-field appearance="outline" [formGroup]="form" class="inputField">
+      <mat-label>Escribe tu Apellido</mat-label>
+      <input
+        type="text"
+        formControlName="lastName"
+        matInput
+        placeholder="Apellido"
+        min="3"
+      />
+      <div
+        *ngIf="
+          form.controls.lastName.invalid &&
+          (form.controls.lastName.dirty || form.controls.lastName.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.lastName.errors?.required">
+          Este campo es requerido
+        </div>
+        <div *ngIf="form.controls.lastName.errors?.minlength">
+          Este campo tiene que tener al menos tres carácteres
+        </div>
+      </div>
+      <mat-hint>Apellido</mat-hint>
+    </mat-form-field>
+
+    <!-- Edad -->
+    <mat-form-field appearance="outline" [formGroup]="form" class="inputField">
+      <mat-label>Edad</mat-label>
+      <input
+        type="number"
+        formControlName="age"
+        matInput
+        placeholder="Edad"
+        min="0"
+        max="125"
+      />
+      <div
+        *ngIf="
+          form.controls.age.invalid &&
+          (form.controls.age.dirty || form.controls.age.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.age.errors?.required">
+          Este campo es requerido
+        </div>
+        <div *ngIf="form.controls.age.errors?.min">
+          La edad mínima es 0 años
+        </div>
+        <div *ngIf="form.controls.age.errors?.max">
+          La edad máxima es 125 años
+        </div>
+      </div>
+      <mat-hint>Edad</mat-hint>
+    </mat-form-field>
+
+    <!-- DNI -->
+    <mat-form-field appearance="outline" [formGroup]="form" class="inputField">
+      <mat-label>Escribe tu DNI</mat-label>
+      <input
+        type="text"
+        formControlName="dni"
+        matInput
+        placeholder="DNI"
+        maxlength="9"
+      />
+      <div
+        *ngIf="
+          form.controls.dni.invalid &&
+          (form.controls.dni.dirty || form.controls.dni.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.dni.errors?.required">
+          Este campo es requerido
+        </div>
+        <div *ngIf="form.controls.dni.errors?.maxlength">
+          Este campo tiene que tener nueve carácteres
+        </div>
+      </div>
+      <mat-hint>DNI</mat-hint>
+    </mat-form-field>
+
+    <!-- Cumpleaños -->
+    <mat-form-field appearance="outline" [formGroup]="form" class="inputField">
+      <mat-label>Cumpleaños</mat-label>
+      <input
+        type="date"
+        formControlName="birthday"
+        matInput
+        placeholder="Cumpleaños"
+        max="2021-05-20"
+        min="1896-05-20"
+      />
+      <div
+        *ngIf="
+          form.controls.birthday.invalid &&
+          (form.controls.birthday.dirty || form.controls.birthday.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.birthday.errors?.required">
+          Este campo es requerido
+        </div>
+      </div>
+      <mat-hint>Cumpleaños</mat-hint>
+    </mat-form-field>
+
+    <!-- COLOR FAVORITO -->
+    <mat-form-field appearance="outline" [formGroup]="form" class="inputField">
+      <mat-label>Color Favorito</mat-label>
+      <input
+        type="color"
+        formControlName="color"
+        matInput
+        placeholder="Color Favorito"
+        max="3"
+      />
+      <div
+        *ngIf="
+          form.controls.color.invalid &&
+          (form.controls.color.dirty || form.controls.color.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.color.errors?.required">
+          Este campo es requerido
+        </div>
+        <div *ngIf="form.controls.color.errors?.minlength">
+          Este campo tiene que tener al menos tres carácteres
+        </div>
+      </div>
+      <mat-hint>C0LOR FAVORITO</mat-hint>
+    </mat-form-field>
+
+    <!--Sexo -->
+    <mat-form-field appearance="outline" class="inputField" [formGroup]="form">
+      <mat-label>Sexo</mat-label>
+      <mat-select placeholder="Sexo" formControlName="genre">
+        <mat-option value="man">Hombre</mat-option>
+        <mat-option value="woman">Mujer</mat-option>
+        <mat-option value="other">Otro</mat-option>
+        <mat-option value="notSpecify">No especificado</mat-option>
+      </mat-select>
+      <div
+        *ngIf="
+          form.controls.genre.invalid &&
+          (form.controls.genre.dirty || form.controls.genre.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="form.controls.genre.errors?.required">
+          Este campo es requerido
+        </div>
+      </div>
+      <mat-hint>Sexo</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div class="buttonContainer">
+    <button
+      mat-stroked-button
+      type="submit"
+      (click)="addContacts()"
+      [disabled]="!form.valid"
+      *ngIf="contactToEdit === false"
+    >
+      Añadir
+    </button>
+
+    <button
+      mat-stroked-button
+      type="submit"
+      (click)="updateContact($event, elementToModify)"
+      [disabled]="!form.valid"
+      *ngIf="contactToEdit === true"
+    >
+      Modificar
+    </button>
+  </div>
+</form>
+
+<div>
+  <p class="counter">Tus contactos registrados ({{ contacts.length }})</p>
+
+  <div class="mat-elevation-z8 tableContainer">
+    <table mat-table [dataSource]="dataSource">
+      <!-- Nombre -->
+      <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+        <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+      </ng-container>
+
+      <!-- Apellido -->
+      <ng-container matColumnDef="lastName">
+        <th mat-header-cell *matHeaderCellDef>Apellido</th>
+        <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+      </ng-container>
+
+      <!-- Edad -->
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef>Edad</th>
+        <td mat-cell *matCellDef="let element">{{ element.age }}</td>
+      </ng-container>
+
+      <!-- DNI -->
+      <ng-container matColumnDef="dni">
+        <th mat-header-cell *matHeaderCellDef>DNI</th>
+        <td mat-cell *matCellDef="let element">{{ element.dni }}</td>
+      </ng-container>
+
+      <!-- Cumpleaños -->
+      <ng-container matColumnDef="birthday">
+        <th mat-header-cell *matHeaderCellDef>Cumpleaños</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.birthday | date: "dd/MM/yyyy" }}
+        </td>
+      </ng-container>
+
+      <!-- Color -->
+      <ng-container matColumnDef="color">
+        <th mat-header-cell *matHeaderCellDef>Color</th>
+        <td mat-cell *matCellDef="let element">{{ element.color }}</td>
+      </ng-container>
+
+      <!-- Sexo -->
+      <ng-container matColumnDef="genre">
+        <th mat-header-cell *matHeaderCellDef>Sexo</th>
+        <td mat-cell *matCellDef="let element">{{ element.genre }}</td>
+      </ng-container>
+
+      <!-- Acciones -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td mat-cell *matCellDef="let element">
+          <button
+            mat-mini-fab
+            color="primary"
+            (click)="removeContact(element)"
+            class="tableButton delete"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button
+            mat-mini-fab
+            color="primary"
+            (click)="modifyContact(element)"
+            class="tableButton edit"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>
